@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F81A1A"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/profileImage"
+    >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/av1" />
+</RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/profileImage"
+    android:padding="10dp"
+    android:id="@+id/loginscreen"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:theme="@style/MyButton1"
+        android:background="@drawable/rb"
+        android:text="Login"></Button>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rb"
+        android:layout_weight="50"
+        android:text="Sign up"
+        android:theme="@style/MyButton"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/loginfrom"
+        android:layout_below="@+id/loginscreen"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.3"
+            android:gravity="end"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:background="@drawable/twitter"
+                ></ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.3"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/fb"
+                ></ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.3"
+            android:gravity="start"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/gplus"
+                ></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/loginfrom"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Or"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </TextView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="User Name / Email Address"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </TextView>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:text="abc@gmail.com"
+          android:textColor="@color/white"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </EditText>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Password"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </TextView>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:text="1234567"
+          android:inputType="textPassword"
+          android:textColor="@color/white"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </EditText>
+
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Remember me"
+          android:layout_marginLeft="30dp"
+          >
+      </CheckBox>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:theme="@style/MyButton2"
+          android:background="@drawable/rb"
+          android:drawableRight="@drawable/ic_stat_name"
+          android:text="Login"></Button>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Forget Password?"
+          android:textColor="@color/white"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:gravity="center"
+          >
+      </TextView>
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>
